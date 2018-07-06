@@ -7,8 +7,8 @@
 
 int RECV_PIN = D2; //an IR detector/demodulatord is connected to GPIO pin D2
 // Update these with values suitable for your network.
-const char* ssid = "******";
-const char* password = "******";
+const char* ssid = "CH3CHO + H2";
+const char* password = "ch3ch2oh";
 const char* mqtt_server = "broker.mqttdashboard.com";
 //const char* mqtt_server = "iot.eclipse.org";
 
