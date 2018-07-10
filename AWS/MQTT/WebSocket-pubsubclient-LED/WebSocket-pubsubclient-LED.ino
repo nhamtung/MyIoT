@@ -146,7 +146,7 @@ void sendmessage (String content) {
     String mess = "{\"state\":{\"reported\":{\"LED\": \"" + content + "\"}}}";
     strcpy(buf, mess.c_str());
     int rc = client.publish(aws_topic, buf); 
-    Serial.print("client.publish: "); Serial.println(mess);   
+    //Serial.print("client.publish: "); Serial.println(mess);   
 }
 
 
