@@ -33,8 +33,8 @@ void setup() {
   iotClient.setAWSEndpoint("amazonaws.com");
   iotClient.setAWSDomain("avt6g3kvwjn2o.iot.ap-southeast-1.amazonaws.com");
   iotClient.setAWSPath("/things/NodeMcuEsp8266/shadow");
-  iotClient.setAWSKeyID("AKIAJ3RDBZS7WIJ5PHWQ");
-  iotClient.setAWSSecretKey("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");
+  iotClient.setAWSKeyID("");
+  iotClient.setAWSSecretKey("");
   iotClient.setHttpClient(&httpClient);
   iotClient.setDateTimeProvider(&dateTimeProvider);
 }

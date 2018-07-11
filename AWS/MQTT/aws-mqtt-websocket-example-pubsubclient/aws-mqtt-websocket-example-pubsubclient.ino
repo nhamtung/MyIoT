@@ -33,8 +33,8 @@ extern "C" {
 char wifi_ssid[]       = "CH3CHO + H2";
 char wifi_password[]   = "ch3ch2oh";
 char aws_endpoint[]    = "avt6g3kvwjn2o.iot.ap-southeast-1.amazonaws.com";
-char aws_key[]         = "AKIAJ3RDBZS7WIJ5PHWQ";
-char aws_secret[]      = "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";
+char aws_key[]         = "";
+char aws_secret[]      = "";
 char aws_region[]      = "ap-southeast-1";
 const char* aws_topic  = "$aws/things/MqttWebSocketNodeMcu/shadow/update";
 int port = 443;
