@@ -56,8 +56,6 @@ int red = 0;
 int green = 0;
 int blue = 0;
 
-#define FADESPEED 5     // make this higher to slow down
-
 //# of connections
 long connection = 0;
 
@@ -102,14 +100,13 @@ void SwitchLedRgb(byte* payload, unsigned int length)
         green = GetRgb(arrGreen);
         blue = GetRgb(arrBlue);
     }
-  
+    analogWrite(REDPIN, 255 - red);
+    analogWrite(BLUEPIN, 255 - green);
+    analogWrite(GREENPIN, 255 - blue);
+    
     Serial.println(red);
     Serial.println(green);
     Serial.println(blue);
-  
-    analogWrite(REDPIN, 1024 - red);
-    analogWrite(BLUEPIN, 1024 - green);
-    analogWrite(GREENPIN, 1024 - blue);
 }
 
 int GetRgb(byte* color)
